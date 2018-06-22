@@ -2,7 +2,7 @@ n = int(input("Enter a number: "))
 factorial = 1
 
 if n < 0:
-    print("Factorial does not exist for negative numbers")
+    print("Positive numbers only, please.")
 elif n == 0:
     print("The factorial of 0 is 1")
 else:
@@ -10,7 +10,7 @@ else:
         factorial = factorial*i
     print("The factorial of", n, "is", factorial)
 
- 
+    
 
 
 
