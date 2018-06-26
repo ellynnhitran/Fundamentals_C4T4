@@ -28,7 +28,7 @@ while True:
         high = comp
         comp = (high + low)//2
         print("Is it", comp, "?")  
-        reponse = input()
+        response = input()
     elif response == "c":
         print("I knew it!")
         break
