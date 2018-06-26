@@ -1,26 +1,18 @@
 from turtle import *
 
 shape("turtle")
-speed(-1)
 color("red")
+speed(-1)
 
 left(30)
-forward(100)
-right(60)
-forward(100)
-right(120)
-forward(100)
-right(60)
-forward(100)
 
-for i in range(3):
-    right(30)
-    forward(100)
-    right(60)
-    forward(100)
-    right(120)
-    forward(100)
-    right(60)
-    forward(100)
+for i in range (4):
+    for k in range (2):
+        forward(100)
+        right (60)
+        forward(100)
+        right(120)
 
+    left(90)
+    
 mainloop()
