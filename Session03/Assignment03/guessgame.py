@@ -1,5 +1,3 @@
-from random import *
-
 num = int(input('''Guess your number game
 Now think of a number from 1 to 100, then press Enter '''))
 instruction = input('''All you have to do is answer to my guess
@@ -7,7 +5,7 @@ instruction = input('''All you have to do is answer to my guess
 's' if my guess is 'S'maller than your number
 'l' if my guess is 'L'arger than your number''')
 
-low = 1
+low = 0
 high = 100
 trial = 0
 comp = (low+high)//2
@@ -19,30 +17,37 @@ response = "  "
 print("Is it", comp, "?")   
 response = input()
 
-if response == "s":
-    large = (comp + high)//2
-    print("Is it", large, "?")
-    response = input()
-elif response == "l":
-    small = (comp + low)//2
-    print("Is it", small, "?")  
-    reponse = input()
-elif response == "c":
-    print("I knew it!")
-
 while True:
-    for i in range (1,50):
-        if response == "s":
-            larger = int(large + i)
-            guess = randint(larger, 100)
-            print(guess)
-        elif response == "l":
-            smaller = int(small - i)
-            guess = randint(1, smaller)
-            print(guess)
-        elif response == "c":
-            print("I knew it!")
-            break
+    trial += 1
+    if response == "s":
+        low = comp
+        comp = (low + high)//2
+        print("Is it", comp, "?")
+        response = input()
+    elif response == "l":
+        high = comp
+        comp = (high + low)//2
+        print("Is it", comp, "?")  
+        reponse = input()
+    elif response == "c":
+        print("I knew it!")
+        break
+
+# while True:
+#     trial += 1
+#     for i in range (1,50):
+# if response == "s":
+#     larger = int(large + 1)
+#     guess = randint(larger, 100)
+#     print(guess)
+# elif response == "l":
+#     smaller = int(small - 1)
+#     guess = randint(1, smaller)
+#     print(guess)
+# elif response == "c":
+#     print("I knew it!")
+    
+        
 
 
 
