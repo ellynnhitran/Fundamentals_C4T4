@@ -33,24 +33,3 @@ while True:
         print("I knew it!")
         break
 
-# while True:
-#     trial += 1
-#     for i in range (1,50):
-# if response == "s":
-#     larger = int(large + 1)
-#     guess = randint(larger, 100)
-#     print(guess)
-# elif response == "l":
-#     smaller = int(small - 1)
-#     guess = randint(1, smaller)
-#     print(guess)
-# elif response == "c":
-#     print("I knew it!")
-    
-        
-
-
-
-
-
-
