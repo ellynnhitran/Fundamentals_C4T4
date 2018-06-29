@@ -21,6 +21,7 @@ while playing:
         print("Is it", mid, "?")
         response = input()
     elif response == "l":
+<<<<<<< HEAD
         high = mid
         mid = (high + low)//2
         print("Is it", mid, "?")  
@@ -31,4 +32,13 @@ while playing:
     else:
         playing = False
 
+=======
+        high = comp
+        comp = (high + low)//2
+        print("Is it", comp, "?")  
+        response = input()
+    elif response == "c":
+        print("I knew it!")
+        break
+>>>>>>> b86d15b736eb8cd74588c49b58f41063052a2017
 
