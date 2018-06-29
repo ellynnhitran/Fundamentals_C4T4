@@ -7,50 +7,28 @@ instruction = input('''All you have to do is answer to my guess
 
 low = 0
 high = 100
-trial = 0
-comp = (low+high)//2
-s = comp < num
-l = comp > num
-c = comp == num
+mid = (low+high)//2
+playing = True
+response = input("Is {0} your number: ".format(mid)).lower()
+# response = "  "
+# print("Is it", mid, "?")   
+# response = input()
 
-response = "  "
-print("Is it", comp, "?")   
-response = input()
-
-while True:
-    trial += 1
+while playing:
     if response == "s":
-        low = comp
-        comp = (low + high)//2
-        print("Is it", comp, "?")
+        low = mid
+        mid = (low + high)//2
+        print("Is it", mid, "?")
         response = input()
     elif response == "l":
-        high = comp
-        comp = (high + low)//2
-        print("Is it", comp, "?")  
-        reponse = input()
+        high = mid
+        mid = (high + low)//2
+        print("Is it", mid, "?")  
+        response = input()
     elif response == "c":
         print("I knew it!")
-        break
-
-# while True:
-#     trial += 1
-#     for i in range (1,50):
-# if response == "s":
-#     larger = int(large + 1)
-#     guess = randint(larger, 100)
-#     print(guess)
-# elif response == "l":
-#     smaller = int(small - 1)
-#     guess = randint(1, smaller)
-#     print(guess)
-# elif response == "c":
-#     print("I knew it!")
-    
-        
-
-
-
-
+        playing = False
+    else:
+        playing = False
 
 

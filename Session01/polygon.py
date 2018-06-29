@@ -7,7 +7,7 @@ color("purple")
 # ans = 0 + int(number)
 # print("I want", ans)
 
-n = 10
+n = 5
 
 for i in range(n): 
     forward (100)
