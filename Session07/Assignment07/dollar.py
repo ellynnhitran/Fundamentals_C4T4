@@ -1,5 +1,6 @@
 def remove_dollar_sign(s):
-    print(s.replace("$", " "))
-    return s
+    string = s.replace("$", " ")
+    print(string)
+    return string
 
 remove_dollar_sign("hihi $ ")
