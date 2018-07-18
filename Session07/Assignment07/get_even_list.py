@@ -1,14 +1,15 @@
+
 def get_even_list(l):
-    list = (l)
-    even=[]
-    for item in list:
+    # list = (l)
+    even_list = []
+    # even=[]
+    for item in l:
         if item%2 == 0:
-            even.append(item)
+            even_list.append(item)
+    # even_list=[ ]
+    # even_list.append(even)
+    print(*even_list, sep=",")
+    return even_list
 
-    sorted_list=[ ]
-    sorted_list.append(even)
-
-    print(*sorted_list)
-    return sorted_list
 
 get_even_list([1, 4, 5, -1, 10])
