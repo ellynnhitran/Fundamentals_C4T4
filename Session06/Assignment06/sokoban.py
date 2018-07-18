@@ -85,6 +85,5 @@ while playing:
         if box["x"] == player["x"] and box["y"] == player["y"]:
             box["x"] += dx
             box["y"] += dy
-
-    
+        
             
