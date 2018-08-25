@@ -1,10 +1,18 @@
 import mlab
-from models.food import Food
+from models.food import Food, User
 import pyexcel
-a = pyexcel.Sheet()
-print(a)
+import pandas as pd
+from pandas import ExcelWriter
+from pandas import ExcelFile
+
 mlab.connect()
+df = pd.read_excel('Crawdata.xlsx', sheet_name='pyexcel_sheet1')
 
-food = Food(title="bbbbb", img="iohoih", nguyenlieu="oijpj", cachlam="hihi")
-
+# for i in df.index:
+  # food = Food(title=df['title'][i], img=df['img'][i], nguyenlieu=df['nguyenlieu'][i].strip("\n").replace(" ",""), cachlam=df['cachlam'][i])
+  # food.save()
+# print("Completed")
+food = Food("asdasd","asdasd","asdasd","asdasd")
 food.save()
+new_user = User("abcxyz","1234567",food)
+new_user.save()
