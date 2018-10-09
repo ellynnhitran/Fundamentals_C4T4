@@ -5,7 +5,7 @@ Tran Tue Nhi
 **Learn coding and Python: Train myself to think rationally and logically.**
 
 ## Fundamentals
-Variable, For loop, While loop, If-Elif-Else, List, Dictionary.
+Study variable, for loop, while loop, if-elif-else, list, dictionary.
 
 1. ```Session01``` how to draw polygons, convert temparatures, calculate area.
 
