@@ -2,6 +2,8 @@
 ``` 
 Tran Tue Nhi 
 ```
+This script runs using Python 3.
+
 **Learn coding and Python: Train myself to think rationally and logically.**
 
 ## Fundamentals
